@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 98%;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr
+                            1fr
+                            50%;
+        grid-template-areas: "header"
+                             "content"
+                             "footer";
+        gap: 5px;
+        justify-items: stretch;
+        height: 100%;
+    }
+    .contentBox {
+        grid-area: content;
+        align-self: start;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        border: 1px solid #000;
+        border-radius: 5px;
+        justify-items: center;
+        grid-gap: 5px;
+    }
+    .content1 {
+        padding: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+    .content2 {
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    .headerBox {
+        grid-area: header;
+        align-self: start;
+        padding: 5px;
+        margin: 5px;
+        display: grid;
+        border: 1px solid #000;
+        border-radius: 5px;
+        justify-items: center;
+    }
+    .header {
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    .footerBox {
+        grid-area: footer;
+        align-self: end;
+        padding: 5px;
+        margin: 5px;
+        display: grid;
+        border: 1px solid #000;
+        border-radius: 5px;
+        justify-items: center;
+    }
+    .footer {
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    a {
+        height: 250px;
+        width: 250px;
+    }
+</style>
+<html>
+    <title>Google Clone</title>
+    <body>
+        <div class="headerBox">
+            <div class="header">header</div>
+        </div>
+        <div class="contentBox">
+            <div class="content1"> 
+                <a href="#"><img src="googlelogo_color_272x92dp.png" alt="Google image"></a>
+            </div>
+            <div class="content2">search box</div>
+        </div>
+        <div class="footerBox">
+            <div class="footer">footer</div>
+        </div>
+    </body>
+</html>
