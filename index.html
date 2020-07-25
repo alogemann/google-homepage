@@ -43,11 +43,19 @@
         padding: 5px;
         margin: 5px;
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         border: 1px solid #000;
         border-radius: 5px;
-        justify-items: right;
     }
-    .header {
+    .header1 {
+        justify-self: start;
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    .header2{
+        justify-self: end;
         padding: 5px;
         border: 1px solid #000;
         border-radius: 5px;
@@ -58,11 +66,19 @@
         padding: 5px;
         margin: 5px;
         display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
         border: 1px solid #000;
         border-radius: 5px;
-        justify-items: center;
     }
-    .footer {
+    .footer1 {
+        justify-self: start;
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    .footer2 {
+        justify-self: end;
         padding: 5px;
         border: 1px solid #000;
         border-radius: 5px;
@@ -76,7 +92,8 @@
     <title>Google Clone</title>
     <body>
         <div class="headerBox">
-            <div class="header">header</div>
+            <div class="header1">about store</div>
+            <div class="header2">Gmail Images</div>
         </div>
         <div class="contentBox">
             <div class="content1"> 
@@ -85,7 +102,8 @@
             <div class="content2">search box</div>
         </div>
         <div class="footerBox">
-            <div class="footer">footer</div>
+            <div class="footer1">Advertising Business How Stuff Works</div>
+            <div class="footer2">Privacy Terms Settings</div>
         </div>
     </body>
 </html>
