@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <style>
     html {
-        height: 98%;
+        height: 100%;
     }
     body {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr
+        grid-template-rows: 10%
                             1fr
-                            50%;
+                            10%;
         grid-template-areas: "header"
                              "content"
                              "footer";
-        gap: 5px;
         justify-items: stretch;
         height: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: arial, sans-sarif;
+        font-size: 14px;
     }
     .contentBox {
         grid-area: content;
         align-self: start;
-        padding: 10px;
-        margin: 10px;
+        padding: 50px;
+        margin: 50px;
         display: grid;
-        border: 1px solid #000;
-        border-radius: 5px;
         justify-items: center;
         grid-gap: 5px;
     }
     .content1 {
         padding: 10px;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 5px;
     }
     .content2 {
         padding: 10px;
@@ -41,69 +40,78 @@
         grid-area: header;
         align-self: start;
         padding: 5px;
-        margin: 5px;
+        margin: 0px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        border: 1px solid #000;
-        border-radius: 5px;
+        height: 40px;
+        
     }
     .header1 {
         justify-self: start;
+        align-self: center;
         padding: 5px;
-        border: 1px solid #000;
-        border-radius: 5px;
+        opacity: 75%
     }
     .header2{
         justify-self: end;
+        align-self: center;
         padding: 5px;
-        border: 1px solid #000;
-        border-radius: 5px;
+        opacity: 75%;
     }
     .footerBox {
         grid-area: footer;
         align-self: end;
-        padding: 5px;
-        margin: 5px;
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
-        border: 1px solid #000;
-        border-radius: 5px;
+        background-color: #f2f2f2;
+        height: 40px;
+        padding: 5px;
+        margin: 0px;
     }
     .footer1 {
         justify-self: start;
-        padding: 5px;
-        border: 1px solid #000;
-        border-radius: 5px;
+        align-self: center;
+        opacity: 75%;
     }
     .footer2 {
         justify-self: end;
-        padding: 5px;
-        border: 1px solid #000;
-        border-radius: 5px;
-    }
-    a {
-        height: 250px;
-        width: 250px;
+        align-self: center;
+        opacity: 75%;
+
     }
 </style>
 <html>
     <title>Google Clone</title>
     <body>
         <div class="headerBox">
-            <div class="header1">about store</div>
-            <div class="header2">Gmail Images</div>
+            <div class="header1">
+                <a href="#">about</a>
+                <a href="#">store</a>
+            </div>
+            <div class="header2">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+            </div>
         </div>
         <div class="contentBox">
             <div class="content1"> 
-                <a href="#"><img src="googlelogo_color_272x92dp.png" alt="Google image"></a>
+                <img src="googlelogo_color_272x92dp.png" alt="Google image">
             </div>
             <div class="content2">search box</div>
         </div>
         <div class="footerBox">
-            <div class="footer1">Advertising Business How Stuff Works</div>
-            <div class="footer2">Privacy Terms Settings</div>
+            <div class="footer1">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
+            <div class="footer2">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
         </div>
     </body>
 </html>
