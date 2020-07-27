@@ -29,17 +29,22 @@
         grid-gap: 5px;
     }
     .content1 {
-        padding: 10px;
+        padding: 5px;
     }
     .content2 {
-        padding: 10px;
-        border: 1px solid #000;
-        border-radius: 5px;
+        padding: 5px;
+        width: 30%;
+    }
+    .content3 {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
     }
     .headerBox {
         grid-area: header;
         align-self: start;
-        padding: 5px;
+        padding: 5px 25px 5px 25px;
         margin: 0px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -48,14 +53,20 @@
         
     }
     .header1 {
-        justify-self: start;
         align-self: center;
         padding: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 25px;
     }
     .header2{
-        justify-self: end;
         align-self: center;
         padding: 5px;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        gap: 25px
     }
     .footerBox {
         grid-area: footer;
@@ -65,24 +76,34 @@
         grid-template-columns: 1fr 1fr;
         background-color: #f2f2f2;
         height: 40px;
-        padding: 5px;
+        padding: 5px 25px 5px 25px;
         margin: 0px;
     }
     .footer1 {
-        justify-self: start;
         align-self: center;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 25px;
     }
     .footer2 {
-        justify-self: end;
         align-self: center;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        gap: 25px;
     }
     a {
         text-decoration: none;
         color: #000;
-        opacity: 75%;
+        opacity: 100%;
     }
     a:hover {
       text-decoration: underline;  
+    }
+    input {
+       width: 100%;
+       
     }
 </style>
 <html>
@@ -102,7 +123,13 @@
             <div class="content1"> 
                 <img src="googlelogo_color_272x92dp.png" alt="Google image">
             </div>
-            <div class="content2">search box</div>
+            <div class="content2">
+                <input type="text">
+            </div>
+            <div class="content3">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
         </div>
         <div class="footerBox">
             <div class="footer1">
