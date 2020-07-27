@@ -31,15 +31,33 @@
     .content1 {
         padding: 5px;
     }
-    .content2 {
+    .searchBox {
         padding: 5px;
         width: 30%;
+        border: solid 1px #dfe1e5;
+        border-radius: 25px;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
     }
-    .content3 {
+    .searchBox:hover {
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.2), 0px 3px 3px rgba(0,0,0,0.2);
+    }
+    .searchIcon {
+        margin: 10px;
+        opacity: 75%;
+    }
+    .buttonBox {
         padding: 5px;
         display: flex;
         justify-content: center;
         gap: 25px;
+    }
+    .button {
+        background-color: #dfe1e5;
+        padding: 10px 15px 10px 15px;
+        opacity: 75%;
+        border-radius: 5px;
     }
     .headerBox {
         grid-area: header;
@@ -50,23 +68,21 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         height: 40px;
-        
     }
     .header1 {
         align-self: center;
-        padding: 5px;
         display: flex;
         justify-content: flex-start;
         align-content: center;
-        gap: 25px;
+        gap: 15px;
     }
     .header2{
         align-self: center;
-        padding: 5px;
         display: flex;
         justify-content: flex-end;
         align-content: center;
-        gap: 25px
+        text-align: center;
+        gap: 15px
     }
     .footerBox {
         grid-area: footer;
@@ -93,17 +109,38 @@
         align-content: center;
         gap: 25px;
     }
+    input {
+       width: 95%;
+       padding: 5px;
+       border: none;
+    }
+    .searchLink {
+        text-decoration: none;
+        color: #000;
+        opacity: 75%;
+        padding: 0px;
+    }
+    .searchLink:hover {
+        text-decoration: none;
+        border: solid 1px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        padding: 0px;
+    }
     a {
         text-decoration: none;
         color: #000;
-        opacity: 100%;
+        opacity: 75%;
+        padding: 10px;
     }
     a:hover {
-      text-decoration: underline;  
+        text-justify: end;
+        text-decoration: underline;  
     }
-    input {
-       width: 100%;
-       
+    .login {
+        background-color: #007bff;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
     }
 </style>
 <html>
@@ -117,18 +154,21 @@
             <div class="header2">
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
+                <a href="#"><img style="height: 15px; width: 15px;" src="google_grid.png"></a>
+                <a href="#" style="padding: 0px;"><div class="login">Login</div></a>
             </div>
         </div>
         <div class="contentBox">
             <div class="content1"> 
                 <img src="googlelogo_color_272x92dp.png" alt="Google image">
             </div>
-            <div class="content2">
+            <div class="searchBox">
+                <img class="searchIcon" src="search_icon.png">
                 <input type="text">
             </div>
-            <div class="content3">
-                <button type="submit">Google Search</button>
-                <button type="submit">I'm Feeling Lucky</button>
+            <div class="buttonBox">
+                <a href="#" class="searchLink"><div class="button">Google Search</div></a>
+                <a href="#" class="searchLink"><div class="button">I'm Feeling Lucky</div></a>
             </div>
         </div>
         <div class="footerBox">
